@@ -21,6 +21,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
         Intent intent = new Intent(this, SecondActivity.class);
+        intent.putExtra("VALUE1", 10);
+        intent.putExtra("VALUE2", 20);
         startActivity(intent);
         // 第一引数contextなのでActivity自身を指定。
         // 第2引数は遷移させたいActivityのクラスを指定。クラス名.classのように指定。
